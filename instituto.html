@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormInscripción</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Formulario de Inscripción IESTP - CHOCOPE</h1>
+    <form method="POST">
+      <fieldset>
+        <div class="fecha">
+          <label for="fecha">Fecha de Nacimiento : </label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div class="dni">
+          <label for="dni">DNI: </label>
+          <input type="text" id="dni" name="dni" required>
+          <label for="telefono" class="telefono-label">Teléfono: </label>
+          <input type="text" id="telefono" class="form-control telefono-input">
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="campo-nombre">
+          <label for="nombre">Nombre: </label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="apellido" class="apellido-label">Apellidos: </label>
+          <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div class="campo-edad-pais">
+          <div class="edad">
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad" name="edad" required>
+          </div>
+          <div class="Programa">
+            <label for="Programa">Programa de Estudios: </label>
+            <select id="Programa" name="Programa" required>
+              <option value="Arquitectura">Arquitectura de Plataformas y Servicios TI</option>
+              <option value="Farmacia">Farmacia Técnica</option>
+              <option value="Enfermería">Enfermería Técnica</option>
+              <option value="Agropecuaria">Producción Agropecuaria</option>
+              <option value="Mecánica">Mecánica de Producción</option>
+              <option value="Contabilidad">Contabilidad</option>
+            </select>
+          </div>
+        </div>
+        <div class="campo-correo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="opciones">
+          <div class="sexo">
+            <fieldset>
+              <legend>Sexo</legend>
+              <div>
+                <div>
+                  <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                  <label for="masculino">Masculino</label>
+                </div>
+                <div>
+                  <input type="radio" id="femenino" name="sexo" value="femenino" required>
+                  <label for="femenino">Femenino</label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="documento">
+            <fieldset>
+              <legend>Tipo de Documento</legend>
+              <div>
+                <input type="radio" name="document-type" value="DNI"> DNI <br>
+              </div>
+            </fieldset>
+          </div>
+          <div class="num">
+            <label for="num-documento">N° de Documento: </label>
+            <input type="text" id="num-documento" name="num-documento" required>
+          </div>
+        </div>
+      </fieldset>
+      <div class="botones">
+        <button type="submit">Enviar Datos</button>
+        <button type="reset">Borrar Información</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

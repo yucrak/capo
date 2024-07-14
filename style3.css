@@ -1,0 +1,176 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 50px;
+    padding: 0;
+    background-image: url(iestpchocope.jpg); 
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; 
+}
+@media (max-width: 768px) {
+        .contenedor {
+        padding: 10px;
+    }
+
+    .campo-nombre,
+    .campo-edad-pais,
+    .ContraseÃ±a {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .campo-nombre label,
+    .campo-edad-pais label,
+    .ContraseÃ±a label {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .apellido-label,
+    .repetir-label {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .documento fieldset,
+    .sexo fieldset {
+        max-width: none;
+        }
+}
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffffa1;
+}
+
+.campo-nombre {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.usuario label{
+    margin-right: 70px;
+}
+
+.campo-correo{
+    margin-top: 10px;
+} 
+
+.campo-correo label{
+    margin-right: 90px;
+}
+  
+.contraseÃ±a{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.contraseÃ±a label{
+    margin-right: 45px;
+}
+
+.telefono-label{
+    margin-left: 110px;
+}
+
+.telefono-input{
+    margin-left: 10px;
+}
+
+.campo-nombre label{
+    margin-right: 70px;
+}
+
+.apellido-label{
+    margin-left: 110px;
+}
+ 
+.campo-edad-pais{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.edad{
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+}
+
+.edad label{
+    margin-right: 90px;
+}
+
+.pais{
+    display: flex;
+    align-items: center;
+}
+  
+.pais label{
+    margin-right: 100px;
+}
+  
+
+.documento fieldset{
+    text-align: left;
+    background-color: #f4f1ed;
+    color: rgb(0, 0, 0);
+    border-color: rgb(128, 113, 113);
+    border: 9px groove (internal value);
+    width: 100%;
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+.sexo fieldset{
+    text-align: left;
+    background-color: #f4f1ed;
+    color: black;
+    border-color: rgb(128, 113, 113);
+    border: 9px groove (internal value);
+    width: 100%;
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+.chek{
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botones button{
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.opciones{
+    display: flex;
+    gap: 20px; 
+}
+
+.sexo,
+.documento,
+.num,
+.chek {
+    flex: 1; 
+}
